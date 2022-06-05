@@ -7,10 +7,10 @@ We're building a **280Ah 12V power station able to withstand 1500W**. These were
 Here's an overview of the power station, its components and the intended outlets.
 
 <p align="center">
-  <img src="docs/overall_blueprint.png" alt="Overall blueprint"/>
+  <img src="./docs/overall_blueprint.jpg" alt="Overall blueprint"/>
 </p>
 
 ### Battery case
 We have a layout of the case that will compress the cells and have a structure to roof the BMS on top of the cells. This unit will act as the battery and will encompass of the 280Ah cells and Daly BMS 200Ah.
 
-The Lightburn project file assumes the usage of `9mm` plywood.
+The Lightburn project file assumes the usage of **9mm plywood**. Since we luckily can use [a 130W CO2 laser cutting machine](https://github.com/nelsonic/nelsonic.github.io/issues/455#issuecomment-549803532), the speed and power settings of each layer have been tweaked using [this calculator](https://mantechmachinery.co.uk/laser-cutter-parameters/), to both cutting and engraving.
