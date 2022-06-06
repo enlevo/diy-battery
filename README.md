@@ -29,7 +29,8 @@ Henceforth, our basic list includes:
 ### Battery
 When choosing a battery, it's important to know what type of cells to go for. We could have bought a pre-made AGM but it wouldn't be as cheap. So we decided to build one ourselves! Lithium Iron Phosphate batteries (known as **LiFePO4**) are a type of lithium ion rechargeable battery. They're cheaper, have better power output, weigh less and have double the cycles of traditional cobalt-base lithium ion batteries.
 
-Given we decided to build a 12V a battery, we'd need ***four 3.2V cells in series***. We just needed to choose our capacity. Every concern and requirement goes back into the old adage: $$ W = V * A$$. Watts equals to volts times ampere. Here's a list of our gear and their respective *consumption wattage*.
+Given we decided to build a 12V a battery, we'd need ***four 3.2V cells in series***. We just needed to choose our capacity. Every concern and requirement goes back into the old adage: $$ W = V \cdot A$$
+**Watts** equals to **volts** times **ampere**. Here's a list of our gear and their respective *consumption wattage*.
 
 | Item             | Watts       |
 | --------------   | ----------- |
@@ -47,11 +48,13 @@ They roughly add up to 295W. Using the formula, considering a 12V battery, we're
 #### Cells
 The core of the battery. The cheapest options are across the globe, in China. [But it has its own risks](https://www.youtube.com/watch?v=EYqemUdIo08). Some cells in Alibaba, Aliexpress or Banggood are ridiculously cheap. But most of the times it's too good to be true. So you have to be careful.
 
-There are infinite discussions about which Chinese brands are best or give the best bang for your buck. To keep it simple, and following DIYSolarForum's and Will Prowse's suggestions, try to stick to Grade A EVE (they're a Chinese manufacturer) cells. There are many sellers who sell EVE cells (not all are legitimate, watch out!) on the most common Chinese e-commerce sites (Alibaba, Aliexpress...). [Amy Wuan](https://diysolarforum.com/threads/amy-wan-vs-amy-zheng-whats-the-difference.36957/) has a great reputation in the forums and it's your safest bet (even if they mess up, they usually just send you a replacement package).
+There are infinite discussions about which Chinese brands are best or give the best bang for your buck. To keep it simple, and following DIYSolarForum's and Will Prowse's suggestions, try to stick to Grade A EVE LF280K (they're a Chinese manufacturer) cells.. There are many sellers who sell EVE cells (not all are legitimate, watch out!) on the most common Chinese e-commerce sites (Alibaba, Aliexpress...). [Amy Wuan](https://diysolarforum.com/threads/amy-wan-vs-amy-zheng-whats-the-difference.36957/) has a great reputation in the forums and it's your safest bet (even if they mess up, they usually just send you a replacement package).
 
 Needless to say, you pay a wee more if you bet on Amy Wuan. You're essentially paying premium for the *safety* of having cheap Grade-A EVE cells. We took a *riskier approach*. We went for Exliporc as the seller, through Lillian Li. It's a bit more daring but people have ordered from them in the past and it's they seem to uphold a [satisfactory reputation](https://diysolarforum.com/threads/new-eve-lf280k-16s-build-from-exliporc.38130/).
 
 Here's hoping! :crossed_fingers:
+
+When purchasing, do ask for a photo of the cells QR Codes. They are extremely helpeful to verify if the cells are legit and Grade-A. [Here's a quick way of reading the cell QR Code](https://www.reddit.com/r/LiFePO4battery/comments/pujggt/how_to_quickly_identify_fake_lfp_battery_cells/).
 
 Don't forget to check the box when they arrive and run tests on the cells to check their health and true capacity. You can open disputes on Alibaba and try to score a refund (try to pay with credit card or Paypal for better protection).
 
@@ -74,7 +77,7 @@ Now take this and put four cells in series (thus making a 12V battery). If you u
 
 Therefore, we **top-balance them**. In other words, we charge all the cells to the same capacity and voltage and make sure they're all lined up! There are loads of videos on how to top balance (here's [two](https://www.youtube.com/watch?v=x5ABvbbics8&t=2s) of our [favourites](https://www.youtube.com/watch?v=RPtT8KAtsJA)). In layman's terms, you connect the cells in parallel and use a DC charger to charge them up to 3.65V. This is the simplest way of doing it. Check the second video linked for a faster approach.
 
-Don't forget to clamp the cells while charging! Cell compression helps extend their lifespan and it's good for their overall health! Check the `Case` section for more details.
+Don't forget to clamp the cells while charging! Cell compression helps extend their lifespan and it's good for their overall health! Check the [Case](#case) section for more details.
 
 
 > :v: **Quick tip** If you don't have a DC charger, I recommend you getting the [EBC-A20](https://pt.aliexpress.com/item/1005003097310721.html?spm=a2g0o.search0304.0.0.7d0516d9igJgla&algo_pvid=854fff39-1335-4a75-ad1d-4145f4b768a2&algo_exp_id=854fff39-1335-4a75-ad1d-4145f4b768a2-14&pdp_ext_f=%7B%22sku_id%22%3A%2212000024063776342%22%7D&pdp_npi=2%40dis%21EUR%21%21102.34%21%21%2111.73%21%21%400bb0623316541173981173071e2a88%2112000024063776342%21sea&gatewayAdapt=glo2bra) tester. This little machine discharges the battery at 20Ah and charges it at 5Ah. The great thing about it is that you can run capacity tests with it (it comes with a software that plots the graph for you) and also charges the battery (albeit a bit slow). It's the best bang for your buck if you want to run capacity tests and charge your cells for top-balancing. 
