@@ -6,7 +6,7 @@ We're building a **280Ah 12V power station able to withstand 1500W**. These were
 ## Mate, why don't you buy your own power station? :thinking:
 Glad you asked! Simple answer: *they're too expensive for what they're worth*. Even if you have warranty, the price per Wh (watt-hour) is ludicrous when compared to DIY solutions.
 
-I don't need to link examples here. I'd be hard-pressed if you found a 280Ah 12V power station capable of running up to 1500W concurrent watts for less than 2000€ in the market. Ours caps at 1000€ (yes, including shipping from China) and also offers a great learning experience! Plus, you have the advantage of **modularity**, meaning you can add more cells in the future if you want. Or perhaps add more outlets? Or maybe add a solar controller so you can plug your solar panels? Maybe you can add a temp controller and add a few fans to control the temperature inside the case?
+I don't need to link examples here. I'd be hard-pressed if you found a 280Ah 12V power station capable of running up to 1500W concurrent watts for less than 2000€ in the market. Ours caps at 1000€ (yes, including DDP shipping costs) and also offers a great learning experience! Plus, you have the advantage of **modularity**, meaning you can add more cells in the future if you want. Or perhaps add more outlets? Or maybe add a solar controller so you can plug your solar panels? Maybe you can add a temp controller and add a few fans to control the temperature inside the case?
 
 It's up to you to decide! :smile:
 
@@ -125,7 +125,25 @@ The Lightburn project file assumes the usage of **9mm plywood**. Since we luckil
 
 
 ### Inverter
-`//TODO`
+The inverter is the second most important piece of the power station. To pick an inverter is simple: choose the max wattage you're expecting your power station to handle **given that the battery can withstand the current**.
+
+For our case, we went for a 1500W nominal current inverter (with peak 3000W). That's 125A. So our battery, in theory, can last for a little bit over an hour at this rate. When choosing your inverter, you need to know the cells' *max discharge current* - this is the maximum current the cells can withstand without damage. For our case, as it was mentioned previously is 1C. Therefore, our inverter shouldn't be able to pull more than the battery's capacity in hours, which is 280A.
+
+You can't go wrong with inverters. The more you pay, the longer they last and the better their efficiency. [This](https://www.youtube.com/watch?v=1rxSapfp4Hs) is a great video if you want a buyer's guide. Ignore the title, it's not specific to solar generators. In short, Giandel's inverters are the cheapest option you can get on the "reliable" range. We opted for a Chinese-manufactured inverter, though. The reason we did this was for experimental reasons. We don't expect to use the power station everyday, so we can opt for a more budget-friendly inverter that can last a reasonable amount of time and still give us decent efficiency at a cheaper price range.
+
+> :warning: Go for **pure sine inverters**. Forget modified sine wave inverters, they can damage your appliances.
+
+> Also, beware of your region's grid frequency. For example, Europe's grid runs at 50Hz but America's and Japan's run at 60Hz. So check it before buying your inverter!
+
+###### Connecting the inverter to the battery
+Here's a quick note before you connect your inverter to the battery. You should charge up the inverter's capacity first before connecting to the battery. If you don't, the terminal can spark and splash hot metal into your eyes.
+
+For this, you can use a cheap resistor to pre-charge the inverter's capacitors. It's really simple! You can follow a guide [here](https://www.youtube.com/watch?v=ZlrtmJRfSP8).
+
+### Charger
+LiFePO4 batteries are rechargeable. What we need is a **DC charger** to connect to the battery (the same way you charge car batteries). There are several chargers that convert AC to DC at a given ampere rate. Therefore, the less the amperage output, the slower the charging process will be.
+
+We recommend [WATE chargers](https://www.youtube.com/watch?v=wkeiRsDJwsk). They're cheap and reliable and offer great amperage given their price. Just make sure to purchase the right voltage when buying a charger. In our case, since we can charge our 12V battery up to 14.6V, we bought the charger with this voltage that charges the battery at 50A. This should fully recharge the battery in less than 6 hours.
 
 ### Great video references
 `//TODO`
