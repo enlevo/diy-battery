@@ -121,6 +121,8 @@ Once you're done, just screw the nuts and you have yourself a fancy battery with
 #### Case
 We have a layout of the case that will compress the cells when charging/top balancing (people find it optional but [it's been proven that compression helps extending the cells' lifespan, given they tend to bloat when charged](https://www.youtube.com/watch?v=cwBxe4cu3yo)) and have a structure to roof the BMS on top of the cells. This unit will act as the battery and will encompass of the 280Ah cells and Daly BMS 200Ah.
 
+> :warning: When arranging the batteries between the two clamps, do not forget to add some insulator material between the cells. The plastic wraps are not enough to protect the cells from shorting - imagine if the thin plastic wrap breaks, you're done! Therefore, we recommend buying PTFE and inserting them between the cells. It's a good insulator and melts at extremely high temperatures, so don't worry!
+
 The Lightburn project file assumes the usage of **9mm plywood**. Since we luckily can use [a 130W CO2 laser cutting machine](https://github.com/nelsonic/nelsonic.github.io/issues/455#issuecomment-549803532), the speed and power settings of each layer have been tweaked using [this calculator](https://mantechmachinery.co.uk/laser-cutter-parameters/), to both cutting and engraving.
 
 
@@ -144,6 +146,11 @@ For this, you can use a cheap resistor to pre-charge the inverter's capacitors. 
 LiFePO4 batteries are rechargeable. What we need is a **DC charger** to connect to the battery (the same way you charge car batteries). There are several chargers that convert AC to DC at a given ampere rate. Therefore, the less the amperage output, the slower the charging process will be.
 
 We recommend [WATE chargers](https://www.youtube.com/watch?v=wkeiRsDJwsk). They're cheap and reliable and offer great amperage given their price. Just make sure to purchase the right voltage when buying a charger. In our case, since we can charge our 12V battery up to 14.6V, we bought the charger with this voltage that charges the battery at 50A. This should fully recharge the battery in less than 6 hours.
+
+### Circuit breaker/inline fuse
+For security purposes, you should get an inline fuse or a circuit breaker between the inverter and the battery. This is because we don't want to overload the battery.
+
+As the name entails, these break the current when reaching a specific amperage. Not sure how much amperage your circuit breaker/fuse ought to have? No worries, check [this table](https://www.altestore.com/diy-solar-resources/recommended-inverter-cables-sizing-and-breakers-or-fuses/)!
 
 ### Great video references
 `//TODO`
