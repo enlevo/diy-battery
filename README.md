@@ -80,7 +80,7 @@ Therefore, we **top-balance them**. In other words, we charge all the cells to t
 Don't forget to clamp the cells while charging! Cell compression helps extend their lifespan and it's good for their overall health! Check the [Case](#case) section for more details.
 
 
-> :v: **Quick tip** If you don't have a DC charger, I recommend you getting the [EBC-A20](https://pt.aliexpress.com/item/1005003097310721.html?spm=a2g0o.search0304.0.0.7d0516d9igJgla&algo_pvid=854fff39-1335-4a75-ad1d-4145f4b768a2&algo_exp_id=854fff39-1335-4a75-ad1d-4145f4b768a2-14&pdp_ext_f=%7B%22sku_id%22%3A%2212000024063776342%22%7D&pdp_npi=2%40dis%21EUR%21%21102.34%21%21%2111.73%21%21%400bb0623316541173981173071e2a88%2112000024063776342%21sea&gatewayAdapt=glo2bra) tester. This little machine discharges the battery at 20Ah and charges it at 5Ah. The great thing about it is that you can run capacity tests with it (it comes with a software that plots the graph for you) and also charges the battery (albeit a bit slow). It's the best bang for your buck if you want to run capacity tests and charge your cells for top-balancing. 
+> :v: **Quick tip** If you don't have a DC charger, I recommend you getting the [EBC-A20](https://pt.aliexpress.com/item/1005003097310721.html?spm=a2g0o.search0304.0.0.7d0516d9igJgla&algo_pvid=854fff39-1335-4a75-ad1d-4145f4b768a2&algo_exp_id=854fff39-1335-4a75-ad1d-4145f4b768a2-14&pdp_ext_f=%7B%22sku_id%22%3A%2212000024063776342%22%7D&pdp_npi=2%40dis%21EUR%21%21102.34%21%21%2111.73%21%21%400bb0623316541173981173071e2a88%2112000024063776342%21sea&gatewayAdapt=glo2bra) tester. This little machine discharges the battery at 20Ah and charges it at 5Ah. The great thing about it is that you can run capacity tests with it (it comes with a software that plots the graph for you) and also charges the battery (albeit a bit slow). It's the best bang for your buck if you want to run capacity tests and charge your cells for top-balancing.
 
 > You [really should](https://www.youtube.com/watch?v=3dmWqHR7b9w) run capacity tests to check for the cells' true capacity and their overall health. [Here's a great rundown](https://www.youtube.com/watch?v=bx7Df_nbv0A) for the aforementioned capacity tester. Trust me, it's really useful, cheap and simple!
 
@@ -88,7 +88,35 @@ Don't forget to clamp the cells while charging! Cell compression helps extend th
 ----
 
 #### BMS
-`//TODO`
+The BMS, also known as battery management system, is what will keep your battery balanced throughout its usage, whilst discharging and charging. There are schools of thoughts that would say that BMS are unnecessary, and top balancing and bottom balancing are enough. However we're looking for a degree of security. BMS also can give us information about current/voltage/usage and set cut-off settings, so it's not only necessary but also useful.
+
+Forum's most used BMS tend to be Daly's, mostly because they're cheap and tend to do their job properly. One can also buy a bluetooth dongle and temp sensor to tweak settings.
+
+###### Choosing correct amperage
+Choosing the BMS amperage depends on two factors: how much discharge you're expecting to run through the inverter and the [cells specification](http://www.dcmax.com.tw/LF280(3.2V280Ah).pdf).
+
+The latter specifies that $1C$ is the maximum discharge current, which means one full capacity, translating to 280A in our case. The former factor means that with an inverter of 1500W, at 12V, it translates to 125A current. Taking these two numbers, we went for a 200Ah BMS, even though we could have chosen a 150Ah as well. We bet on the 200Ah range mainly because of price and the thick gauge cables. One would usually order from China but we found a seller in the UK which, even with shipping and customs tax, had a cheaper price. The link is posted on the components list above.
+
+> :warning: Please note that BMS' also have a charging limit. So consider the battery charger amperage according to the BMS you end up using.
+
+###### Hooking to the battery
+We need to connect the BMS to the battery. We highly recommend purchasing [M6 connector nuts](https://www.amazon.es/s?k=m6+connector+nut&geniuslink=true&tag=nigelivy0f1-21) (to keep the BMS leads in place) and [heat shrink lugs](https://www.amazon.es/dp/B088ZSCWTR?tag=nigelivy0f1-21&geniuslink=true) (to clamp on balanace leads, making it easier to connect ot the battery.
+
+After cramping each BMS balance lead with the lugs, we hook the negative lead to the negative of the battery. The positive leads from the BMS connect to the battery's *in order* (the order is usually found in the BMS itself but you can easily find online if you're having trouble). We're looking to do something like the following picture.
+
+<p align="center">
+  <img src="./docs/bms_hook.png" alt="Charge graph"/>
+</p>
+
+That should do it. But it's best to double check the voltage of each terminal in the BMS to make sure all the leads were plugged in the correct order. You can use the voltmeter to check if the difference between the negative terminal and the positive is 3.5V, incrementing 3.5V the furthest you go along the BMS terminals. Like in the following picture.
+
+<p align="center">
+  <img src="./docs/check_bms.png" alt="Charge graph"/>
+</p>
+
+The image shows the 4th positive terminal, so it should be four increments of 3.5V, which are 14V (as shown in the picture). This tells us that thus far the terminals are correctly plugged.
+
+Once you're done, just screw the nuts and you have yourself a fancy battery with a nice BMS :tada:! Give yourself a pat on the back!
 
 #### Case
 We have a layout of the case that will compress the cells when charging/top balancing (people find it optional but [it's been proven that compression helps extending the cells' lifespan, given they tend to bloat when charged](https://www.youtube.com/watch?v=cwBxe4cu3yo)) and have a structure to roof the BMS on top of the cells. This unit will act as the battery and will encompass of the 280Ah cells and Daly BMS 200Ah.
