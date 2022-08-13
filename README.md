@@ -3,14 +3,18 @@ This repo shows the progress of two young doughnuts building a power station for
 
 We're building a **280Ah 12V power station able to withstand 1500W**. These were the specs we found best suited our needs. Since we are powering two speakers, a laptop, DJ mixer and lights, this gig is expected to give around 10 hours of non-stop tunes :notes:.
 
-## Mate, why don't you buy your own power station? :thinking:
+# Table of Contents
+1. [Preface](#preface)
+2. [Materials Overview & Design](#overview)
+
+## Mate, why don't you buy your own power station? :thinking: <a name="preface"></a>
 Glad you asked! Simple answer: *they're too expensive for what they're worth*. Even if you have warranty, the price per Wh (watt-hour) is ludicrous when compared to DIY solutions.
 
 I don't need to link examples here. I'd be hard-pressed if you found a 280Ah 12V power station capable of running up to 1500W concurrent watts for less than 2000€ in the market. Ours caps at 1000€ (yes, including DDP shipping costs) and also offers a great learning experience! Plus, you have the advantage of **modularity**, meaning you can add more cells in the future if you want. Or perhaps add more outlets? Or maybe add a solar controller so you can plug your solar panels? Maybe you can add a temp controller and add a few fans to control the temperature inside the case?
 
 It's up to you to decide! :smile:
 
-## Overview
+## Materials Overview & Design <a name="overview"></a>
 Here's an overview of the power station, its components and the intended outlets. Bear in mind, this power station is *basic*; it only has the components we find essential. Sure, we can install a fan and controller for ventilation (and it is really cheap to do so) but we prefer to keep it simple here.
 
 <p align="center">
