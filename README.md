@@ -6,8 +6,9 @@ We're building a **280Ah 12V power station able to withstand 1500W**. These were
 # Table of Contents
 1. [Preface](#preface)
 2. [Materials Overview & Design](#overview)
+3. [Assembly](#assembly)
 
-## Mate, why don't you buy your own power station? :thinking: <a name="preface"></a>
+## Mate, why don't you buy a pre-made power station? :thinking: <a name="preface"></a>
 Glad you asked! Simple answer: *they're too expensive for what they're worth*. Even if you have warranty, the price per Wh (watt-hour) is ludicrous when compared to DIY solutions.
 
 I don't need to link examples here. I'd be hard-pressed if you found a 280Ah 12V power station capable of running up to 1500W concurrent watts for less than 2000€ in the market. Ours caps at 1000€ (yes, including DDP shipping costs) and also offers a great learning experience! Plus, you have the advantage of **modularity**, meaning you can add more cells in the future if you want. Or perhaps add more outlets? Or maybe add a solar controller so you can plug your solar panels? Maybe you can add a temp controller and add a few fans to control the temperature inside the case?
@@ -28,12 +29,16 @@ Henceforth, our basic list includes:
 - [Daly BMS 200Ah 4s](https://offgridvan.life/shop/daly-12v-200a-bms-for-4s-lifepo4-battery)
 - [1500W 12V 50Hz inverter](https://www.banggood.com/Mensela-IT-PS1-Pro-220V-50HZ-Intelligent-Screen-Solar-Pure-Sine-Wave-Power-Inverter-2200W-or-3000W-or-4000W-or-5000W-or-6000W-or-7000W-DC-50HZ-12V-or-24V-To-AC-220V-Converter-p-1789663.html?utm_source=emarsys&utm_medium=Outofstocknosplit&utm_campaign=trigger-order&utm_content=leander&sc_src=email_5007166&sc_eh=dc563cd3b58e91061&sc_llid=112806&sc_lid=225205703&sc_uid=7uZyj2v05v&cur_warehouse=CN&ID=518349555089)
 - [WATE 14.6V 50Ah charger](https://pt.aliexpress.com/item/4000457912081.html?spm=a2g0o.order_list.0.0.3c89caa4neo3Uo&gatewayAdapt=glo2bra)
-- basic hardware (plywood, resistor, fuse boxes, 250Ah circuit breaker, outlets, PTFE)
+- basic hardware (plywood, resistor, fuse boxes, 250Ah circuit breaker, outlets, PTFE, screws, washers, cables)
 
 ### Battery
-When choosing a battery, it's important to know what type of cells to go for. We could have bought a pre-made AGM but it wouldn't be as cheap. So we decided to build one ourselves! Lithium Iron Phosphate batteries (known as **LiFePO4**) are a type of lithium ion rechargeable battery. They're cheaper, have better power output, weigh less and have double the cycles of traditional cobalt-base lithium ion batteries.
+When choosing a battery, it's important to know what type of cells to go for. We could have bought a pre-made AGM but it wouldn't be as cheap. So we decided to build one ourselves! Lithium Iron Phosphate batteries (known as **LiFePO4**) are a type of lithium ion rechargeable battery. They're cheaper, have better power output, weigh less and have double the cycles of traditional cobalt-based lithium ion batteries.
 
-Given we decided to build a 12V a battery, we'd need ***four 3.2V cells in series***. We just needed to choose our capacity. Every concern and requirement goes back into the old adage: $$ W = V \cdot A$$
+Given we decided to build a 12V a battery, we'd need ***four 3.2V cells in series***. We just needed to choose our capacity. Every concern and requirement goes back into the old adage:
+
+$$ W = V \cdot A$$
+
+
 **Watts** equals to **volts** times **ampere**. Here's a list of our gear and their respective *consumption wattage*.
 
 | Item             | Watts       |
@@ -60,7 +65,7 @@ Here's hoping! :crossed_fingers:
 
 When purchasing, do ask for a photo of the cells QR Codes. They are extremely helpeful to verify if the cells are legit and Grade-A. [Here's a quick way of reading the cell QR Code](https://www.reddit.com/r/LiFePO4battery/comments/pujggt/how_to_quickly_identify_fake_lfp_battery_cells/).
 
-Don't forget to check the box when they arrive and run tests on the cells to check their health and true capacity. You can open disputes on Alibaba and try to score a refund (try to pay with credit card or Paypal for better protection).
+Don't forget to check the box when they arrive and run capacity tests on the cells to check for their health and true capacity. You can open disputes on Alibaba and try to score a refund (try to pay with credit card or Paypal for better protection).
 
 ----
 
@@ -99,12 +104,12 @@ Forum's most used BMS tend to be Daly's, mostly because they're cheap and tend t
 ###### Choosing correct amperage
 Choosing the BMS amperage depends on two factors: how much discharge you're expecting to run through the inverter and the [cells specification](http://www.dcmax.com.tw/LF280(3.2V280Ah).pdf).
 
-The latter specifies that $1C$ is the maximum discharge current, which means one full capacity, translating to 280A in our case. The former factor means that with an inverter of 1500W, at 12V, it translates to 125A current. Taking these two numbers, we went for a 200Ah BMS, even though we could have chosen a 150Ah as well. We bet on the 200Ah range mainly because of price and the thick gauge cables. One would usually order from China but we found a seller in the UK which, even with shipping and customs tax, had a cheaper price. The link is posted on the components list above.
+The latter specifies that 1C is the maximum discharge current, which means one full capacity, translating to 280A in our case. The former factor means that with an inverter of 1500W, at 12V, it translates to 125A current. Taking these two numbers, we went for a 200Ah BMS, even though we could have chosen a 150Ah as well. We bet on the 200Ah range mainly because of price and the thick gauge cables. One would usually order from China but we found a seller in the UK which, even with shipping and customs tax, had a cheaper price. The link is posted on the components list above.
 
-> :warning: Please note that BMS' also have a charging limit. So consider the battery charger amperage according to the BMS you end up using.
+> :warning: Please note that BMS' also have a charging limit. So consider the battery charger amperage according to the BMS you end up using. In our case, the BMS had a 100Ah charging limit and we ended up using a 20Ah WATE charger.
 
 ###### Hooking to the battery
-We need to connect the BMS to the battery. We highly recommend purchasing [M6 connector nuts](https://www.amazon.es/s?k=m6+connector+nut&geniuslink=true&tag=nigelivy0f1-21) (to keep the BMS leads in place) and [heat shrink lugs](https://www.amazon.es/dp/B088ZSCWTR?tag=nigelivy0f1-21&geniuslink=true) (to clamp on balanace leads, making it easier to connect ot the battery.
+We need to connect the BMS to the battery. We highly recommend purchasing [M6 connector nuts](https://www.amazon.es/s?k=m6+connector+nut&geniuslink=true&tag=nigelivy0f1-21) (to keep the BMS leads in place) and [heat shrink lugs](https://www.amazon.es/dp/B088ZSCWTR?tag=nigelivy0f1-21&geniuslink=true) (to clamp on balance leads, making it easier to connect ot the battery.
 
 After cramping each BMS balance lead with the lugs, we hook the negative lead to the negative of the battery. The positive leads from the BMS connect to the battery's *in order* (the order is usually found in the BMS itself but you can easily find online if you're having trouble). We're looking to do something like the following picture.
 
@@ -125,9 +130,9 @@ Once you're done, just screw the nuts and you have yourself a fancy battery with
 #### Case
 We have a layout of the case that will compress the cells when charging/top balancing (people find it optional but [it's been proven that compression helps extending the cells' lifespan, given they tend to bloat when charged](https://www.youtube.com/watch?v=cwBxe4cu3yo)) and have a structure to roof the BMS on top of the cells. This unit will act as the battery and will encompass of the 280Ah cells and Daly BMS 200Ah.
 
-> :warning: When arranging the batteries between the two clamps, do not forget to add some insulator material between the cells. The plastic wraps are not enough to protect the cells from shorting - imagine if the thin plastic wrap breaks, you're done! Therefore, we recommend buying PTFE and inserting them between the cells. It's a good insulator and melts at extremely high temperatures, so don't worry!
+> :warning: When arranging the batteries between the two clamps, do not forget to add some insulator material between the cells. The blue plastic wraps that come with the batteries are not enough to protect the cells from shorting - imagine if the thin plastic wrap breaks, you're done! Therefore, we recommend buying PTFE and inserting them between the cells. It's a good insulator and melts at extremely high temperatures, so don't worry!
 
-The Lightburn project file assumes the usage of **9mm plywood**. Since we luckily can use [a 130W CO2 laser cutting machine](https://github.com/nelsonic/nelsonic.github.io/issues/455#issuecomment-549803532), the speed and power settings of each layer have been tweaked using [this calculator](https://mantechmachinery.co.uk/laser-cutter-parameters/), to both cutting and engraving.
+The Lightburn project file assumes the usage of **9mm plywood**. Since we luckily can use [a 130W CO2 laser cutting machine](https://github.com/nelsonic/nelsonic.github.io/issues/455#issuecomment-549803532) (huge thank you to [@nelsonic](https://github.com/nelsonic)), the speed and power settings of each layer have been tweaked using [this calculator](https://mantechmachinery.co.uk/laser-cutter-parameters/), to both cutting and engraving.
 
 
 ### Inverter
