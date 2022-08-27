@@ -29,7 +29,7 @@ Henceforth, our basic list includes:
 - [Daly BMS 200Ah 4s](https://offgridvan.life/shop/daly-12v-200a-bms-for-4s-lifepo4-battery)
 - [1500W 12V 50Hz inverter](https://www.banggood.com/Mensela-IT-PS1-Pro-220V-50HZ-Intelligent-Screen-Solar-Pure-Sine-Wave-Power-Inverter-2200W-or-3000W-or-4000W-or-5000W-or-6000W-or-7000W-DC-50HZ-12V-or-24V-To-AC-220V-Converter-p-1789663.html?utm_source=emarsys&utm_medium=Outofstocknosplit&utm_campaign=trigger-order&utm_content=leander&sc_src=email_5007166&sc_eh=dc563cd3b58e91061&sc_llid=112806&sc_lid=225205703&sc_uid=7uZyj2v05v&cur_warehouse=CN&ID=518349555089)
 - [WATE 14.6V 50Ah charger](https://pt.aliexpress.com/item/4000457912081.html?spm=a2g0o.order_list.0.0.3c89caa4neo3Uo&gatewayAdapt=glo2bra)
-- basic hardware (plywood, resistor, fuse boxes, 250Ah circuit breaker, outlets, PTFE, screws, washers, cables)
+- basic hardware (plywood, resistor, fuse boxes, 250Ah circuit breaker, outlets, PTFE, screws, threaded bars, washers, cables, 2x handles)
 
 ### Battery
 When choosing a battery, it's important to know what type of cells to go for. We could have bought a pre-made AGM but it wouldn't be as cheap. So we decided to build one ourselves! Lithium Iron Phosphate batteries (known as **LiFePO4**) are a type of lithium ion rechargeable battery. They're cheaper, have better power output, weigh less and have double the cycles of traditional cobalt-based lithium ion batteries.
@@ -161,5 +161,36 @@ For security purposes, you should get an inline fuse or a circuit breaker betwee
 
 As the name entails, these break the current when reaching a specific amperage. Not sure how much amperage your circuit breaker/fuse ought to have? No worries, check [this table](https://www.altestore.com/diy-solar-resources/recommended-inverter-cables-sizing-and-breakers-or-fuses/)!
 
-### Great video references
-`//TODO`
+## Assembly <a name="assembly"></a>
+The assembly process consists of two parts: the battery unit and the rest of the power station. We wanted the battery unit to be easily removable, hence why we added handles to its case.
+
+### Battery unit
+We previously mentioned we took a riskier approach on getting slightly cheaper EVE cells with another seller called Lillian Li. Needless to say they provided great communication and support. Even though it took nearly 2 months for the cells to arrive, they were in good condition and thoroughly passed the capacity tests.
+
+<p float="middle">
+  <img src="./docs/cells.jpg" width="49%" alt="Cells shipped"/>
+  <img src="./docs/battery_unit.jpg" width="50%" alt="Final battery unit"/>
+</p>
+
+The assembly process could be described by text here but its much easier to follow [the video](https://www.youtube.com/watch?v=-ZxcGc59M60) we used as reference. We've followed this video step by step and everything worked at the end. We now have a fully top-balanced battery unit (it took roughly 5 days to fully top-balance the batteries) with a BMS that can be accessed with an app and tweak the settings by bluetooth (and check state of charge, voltage delta, etc...).
+
+> :warning: Do not touch the positive and negative lead of the battery unit. This will cause a short and potentially ruin the battery.
+
+### The case (putting everything together)
+Luckily for you, the battery unit is the hardest part of the process. This is where your creativity comes into play. Following the diagram depicted in the beginning of this document, you can now place each component however you like. You have two options. You either buy a case (Stanley cases, for examples) or you build your own. We took the latter path.
+
+The `case.lbrn2` file refers to our DIY wooden case that is water-resistant and mobile (with wheels). Each side of the box is nailed together screws and wood glue. The inside of the box is painted with wood sealer to better seal the inside of the box in case water tries to leak through. We also applied water-resistant wood finisher on both inside and outside of the box.
+
+<p float="right">
+  <img src="./docs/box.jpg" width="100%" alt="Box construction"/>
+</p>
+
+You might have noticed there are two additional wooden stripes placed on either side of the box. This is to install the handles and to make sure they handle the weight of the box with every component inside it and stay in place. The box is expected to weigh around 35kg (the battery unit alone weighing 20kg).
+
+The project file also includes a lid that you can print, glue and screw and fits on top of the box neatly.
+
+//TODO
+Add photo of finished product Here
+
+
+## //TODO see it in action
