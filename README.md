@@ -174,7 +174,7 @@ We previously mentioned we took a riskier approach on getting slightly cheaper E
 
 The assembly process could be described by text here but its much easier to follow [the video](https://www.youtube.com/watch?v=-ZxcGc59M60) we used as reference. We've followed this video step by step and everything worked at the end. We now have a fully top-balanced battery unit (it took roughly 5 days to fully top-balance the batteries) with a BMS that can be accessed with an app and tweak the settings by bluetooth (and check state of charge, voltage delta, etc...).
 
-> :warning: Do not touch the positive and negative lead of the battery unit. This will cause a short and potentially ruin the battery.
+> :warning: Do not touch the positive and negative lead of the battery unit coming out of the BMS. This will cause a short and potentially ruin the battery and be dangerous as it creates a spark. It happened two times with us and luckily it was a split second spark so nothing severe happened. But please beware, there's a reason we wrapped the positive lead with bubble wrap in the picture above!
 
 ### The case (putting everything together)
 Luckily for you, the battery unit is the hardest part of the process. This is where your creativity comes into play. Following the diagram depicted in the beginning of this document, you can now place each component however you like. You have two options. You either buy a case (Stanley cases, for examples) or you build your own. We took the latter path.
