@@ -189,6 +189,10 @@ You might have noticed there are two additional wooden stripes placed on either 
 
 The project file also includes a lid that you can print, glue and screw and fits on top of the box neatly.
 
+> You can place your components in whatever fashion you desire but make sure the cables coming out of the BMS (this makes up the battery unit) don't come to contact with the metal part of the BMS, as it can create a short. We recommend using tape or something to cover these metalic counterparts to lessen the probability of shorting by mistake. 
+
+> Do make use of shunts and cable supports and nail them from inside the box. It will make cable management easier and make sure they stay in place. Use heavy duty screws to nail the battery to the case, if you want. The battery unit is roughly 20kgs so the screws ought to be strong enough to handle the weight.
+
 //TODO
 Add photo of finished product Here
 
