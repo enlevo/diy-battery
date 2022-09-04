@@ -7,6 +7,7 @@ We're building a **280Ah 12V power station able to withstand 1500W**. These were
 1. [Preface](#preface)
 2. [Materials Overview & Design](#overview)
 3. [Assembly](#assembly)
+4. [Just use it now!](#useitnow)
 
 ## Mate, why don't you buy a pre-made power station? :thinking: <a name="preface"></a>
 Glad you asked! Simple answer: *they're too expensive for what they're worth*. Even if you have warranty, the price per Wh (watt-hour) is ludicrous when compared to DIY solutions.
@@ -189,8 +190,11 @@ You might have noticed there are two additional wooden stripes placed on either 
 
 The project file also includes a lid that you can print, glue and screw and fits on top of the box neatly.
 
-//TODO
-Add photo of finished product Here
+## :tada: And now just use it! <a name="useitnow"></a>
+This should cover 99% of the groundwork you do. If you reached this point, you're a rockstar! You got yourself a durable, weather-resistant, mobile and *_modular_* power station that can be used to hang out with your friends and party for hours on end! Or perhaps you fancy yourself a week or two in the woods with your laptop or other electronics? 
 
+You choose! Here's a snippet of our first test with it on a remote location in Portugal, near Marão. The battery greatly exceeded our expectations. The speakers were on full volume for around 5-6 hours and the battery still had 80% capacity! And that's with a computer, mixer and DJ controller connected :smile:
 
-## //TODO see it in action
+<p float="right">
+  <img src="./docs/marao.png" width="100%" alt="Somewhere in Portugal"/>
+</p>
