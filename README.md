@@ -116,14 +116,14 @@ We need to connect the BMS to the battery. We highly recommend purchasing [M6 co
 After cramping each BMS balance lead with the lugs, we hook the negative lead to the negative of the battery. The positive leads from the BMS connect to the battery's *in order* (the order is usually found in the BMS itself but you can easily find online if you're having trouble). We're looking to do something like the following picture.
 
 <p align="center">
-  <img src="./docs/bms_hook.png" alt="Charge graph"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497758-1ec4a16a-0dfc-4455-8005-e4ad16e46e81.png" alt="Charge graph"/>
 </p>
 
 That should do it. But it's best to double check the voltage of each terminal in the BMS to make sure all the leads were plugged in the correct order. You can use the voltmeter to check if the difference between the negative terminal and the positive is 3.5V, incrementing 3.5V the furthest you go along the BMS terminals. Like in the following picture.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/17494745/201497555-ea13beaf-0db2-4607-8203-48ccbff58f01.png" alt="Charge graph"/>
-</p>
+  <img src="https://user-images.githubusercontent.com/17494745/201497743-50f6fd4b-5ec2-4004-ba1c-3f6c440cb6c4.png" alt="Check BMS terminals"/>
+
 
 The image shows the 4th positive terminal, so it should be four increments of 3.5V, which are 14V (as shown in the picture). This tells us that thus far the terminals are correctly plugged.
 
