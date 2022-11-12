@@ -20,8 +20,9 @@ It's up to you to decide! :smile:
 Here's an overview of the power station, its components and the intended outlets. Bear in mind, this power station is *basic*; it only has the components we find essential. Sure, we can install a fan and controller for ventilation (and it is really cheap to do so) but we prefer to keep it simple here.
 
 <p align="center">
-  <img src="./docs/overall_blueprint.jpg" alt="Overall blueprint"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497522-731b6cc4-cc27-485c-84fb-b23d2ae3a9ee.jpg" alt="Overall blueprint"/>
 </p>
+
 
 This is our personal opinion on what the power station should have *at minimum*. We've religiously followed [DIY Solar Forum's advice](https://diysolarforum.com/) on the best parts and cheapest approach possible (shout out to [Will Prowse](https://www.youtube.com/c/WillProwse), his channel is a goldmine for DIY generators and batteries). Granted, the forum's main focus lies on solar generators. However, we forewent some of the components since our power station is meant for outdoor, off-grid use and not to be connected to solar panels.
 
@@ -74,7 +75,7 @@ Don't forget to check the box when they arrive and run capacity tests on the cel
 It's important to top balance the cells. Here's a quick lesson about voltage and discharge capacity on LiFePO4 cells. Check the following image. These cells maintain roughly the same voltage between 90% and 20% capacity.
 
 <p align="center">
-  <img src="./docs/voltage_graph.png" alt="Voltage graph"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497667-99732864-71e4-483a-8075-5652159616fd.png" alt="Voltage graph"/>
 </p>
 
 So when you open up your brand new cells and observe that the voltage is 3.25V, it means the battery can be 40% or 80% charged, for example.
@@ -82,7 +83,7 @@ So when you open up your brand new cells and observe that the voltage is 3.25V, 
 Now take this and put four cells in series (thus making a 12V battery). If you use the battery, they all discharge at the same time. It means that one cell might be discharged *first* than the others (under-charge). The same thing can happen when charging, leading to over-charge. This is damaging to the cells long-term and can seriously effect their lifespan.
 
 <p align="center">
-  <img src="./docs/charge_example.png" alt="Charge graph"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497677-da6d77f7-c7e3-4d66-95a2-6e2575ed4abd.png" alt="Charge graph"/>
 </p>
 
 Therefore, we **top-balance them**. In other words, we charge all the cells to the same capacity and voltage and make sure they're all lined up! There are loads of videos on how to top balance (here's [two](https://www.youtube.com/watch?v=x5ABvbbics8&t=2s) of our [favourites](https://www.youtube.com/watch?v=RPtT8KAtsJA)). In layman's terms, you connect the cells in parallel and use a DC charger to charge them up to 3.65V. This is the simplest way of doing it. Check the second video linked for a faster approach.
@@ -121,7 +122,7 @@ After cramping each BMS balance lead with the lugs, we hook the negative lead to
 That should do it. But it's best to double check the voltage of each terminal in the BMS to make sure all the leads were plugged in the correct order. You can use the voltmeter to check if the difference between the negative terminal and the positive is 3.5V, incrementing 3.5V the furthest you go along the BMS terminals. Like in the following picture.
 
 <p align="center">
-  <img src="./docs/check_bms.png" alt="Charge graph"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497555-ea13beaf-0db2-4607-8203-48ccbff58f01.png" alt="Charge graph"/>
 </p>
 
 The image shows the 4th positive terminal, so it should be four increments of 3.5V, which are 14V (as shown in the picture). This tells us that thus far the terminals are correctly plugged.
@@ -169,8 +170,8 @@ The assembly process consists of two parts: the battery unit and the rest of the
 We previously mentioned we took a riskier approach on getting slightly cheaper EVE cells with another seller called Lillian Li. Needless to say they provided great communication and support. Even though it took nearly 2 months for the cells to arrive, they were in good condition and thoroughly passed the capacity tests.
 
 <p float="middle">
-  <img src="./docs/cells.jpg" width="49%" alt="Cells shipped"/>
-  <img src="./docs/battery_unit.jpg" width="50%" alt="Final battery unit"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497564-d35bf832-7181-4ba9-b12b-0c02b13bd043.jpg" width="49%" alt="Cells shipped"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497567-7ab92bc6-faba-4c8a-9683-bcecff85bad8.jpg" width="50%" alt="Final battery unit"/>
 </p>
 
 The assembly process could be described by text here but its much easier to follow [the video](https://www.youtube.com/watch?v=-ZxcGc59M60) we used as reference. We've followed this video step by step and everything worked at the end. We now have a fully top-balanced battery unit (it took roughly 5 days to fully top-balance the batteries) with a BMS that can be accessed with an app and tweak the settings by bluetooth (and check state of charge, voltage delta, etc...).
@@ -183,7 +184,7 @@ Luckily for you, the battery unit is the hardest part of the process. This is wh
 The `case.lbrn2` file refers to our DIY wooden case that is water-resistant and mobile (with wheels). Each side of the box is nailed together screws and wood glue. The inside of the box is painted with wood sealer to better seal the inside of the box in case water tries to leak through. We also applied water-resistant wood finisher on both inside and outside of the box.
 
 <p float="right">
-  <img src="./docs/box.jpg" width="100%" alt="Box construction"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497578-65d97706-b61e-42f4-98e9-09bc3e7b017e.jpg" width="100%" alt="Box construction"/>
 </p>
 
 You might have noticed there are two additional wooden stripes placed on either side of the box. This is to install the handles and to make sure they handle the weight of the box with every component inside it and stay in place. The box is expected to weigh around 35kg (the battery unit alone weighing 20kg).
@@ -200,6 +201,6 @@ This should cover 99% of the groundwork you do. If you reached this point, you'r
 You choose! Here's a snippet of our first test with it on a remote location in Portugal, near Marão. The battery greatly exceeded our expectations. The speakers were on full volume for around 5-6 hours and the battery still had 80% capacity! And that's with a computer, mixer and DJ controller connected :smile:
 
 <p float="middle">
-  <img src="./docs/marao.png" width="49%" alt="Somewhere in Portugal"/>
-  <img src="./docs/marao2.png" width="50%" alt="Somewhere in Portugal"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497638-e3f1b94d-ed28-4e09-8a53-a24ee8b33c68.png" width="49%" alt="Somewhere in Portugal"/>
+  <img src="https://user-images.githubusercontent.com/17494745/201497641-aa4b568b-495b-46aa-ba2e-3e8177df9a26.png" width="50%" alt="Somewhere in Portugal"/>
 </p>
