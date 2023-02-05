@@ -201,6 +201,6 @@ This should cover 99% of the groundwork you do. If you reached this point, you'r
 You choose! Here's a snippet of our first test with it on a remote location in Portugal, near Marão. The battery greatly exceeded our expectations. The speakers were on full volume for around 5-6 hours and the battery still had 80% capacity! And that's with a computer, mixer and DJ controller connected :smile:
 
 <p float="middle">
-  <img src="https://user-images.githubusercontent.com/17494745/201497638-e3f1b94d-ed28-4e09-8a53-a24ee8b33c68.png" width="49%" alt="Somewhere in Portugal"/>
-  <img src="https://user-images.githubusercontent.com/17494745/201497641-aa4b568b-495b-46aa-ba2e-3e8177df9a26.png" width="50%" alt="Somewhere in Portugal"/>
+  <img style="max-height:20px" src="https://user-images.githubusercontent.com/17494745/201497638-e3f1b94d-ed28-4e09-8a53-a24ee8b33c68.png"  alt="Somewhere in Portugal"/>
+  <img style="max-height:20px" src="https://user-images.githubusercontent.com/17494745/216845024-23018d3c-1510-4488-8f57-b2d8d325660f.png"  alt="Somewhere in Portugal"/>
 </p>
