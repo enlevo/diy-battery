@@ -1,13 +1,30 @@
 # DIY Power Station
-This repo shows the progress of two young doughnuts building a power station for off-grid outdoor DJ music sessions with the lads.
+
+If you're interested, like us, in doing things outdoors with your friends and enjoy life, you might be interested in getting yourself your own DIY battery. This is **awesome** for outdoor events and camping. It can last you *weeks* (depending on what you use). 
 
 We're building a **280Ah 12V power station able to withstand 1500W**. These were the specs we found best suited our needs. Since we are powering two speakers, a laptop, DJ mixer and lights, this gig is expected to give around 10 hours of non-stop tunes :notes:.
 
 # Table of Contents
-1. [Preface](#preface)
-2. [Materials Overview & Design](#overview)
-3. [Assembly](#assembly)
-4. [Just use it now!](#useitnow)
+- [DIY Power Station](#diy-power-station)
+- [Table of Contents](#table-of-contents)
+  - [Mate, why don't you buy a pre-made power station? :thinking: ](#mate-why-dont-you-buy-a-pre-made-power-station-thinking-)
+  - [Materials Overview \& Design ](#materials-overview--design-)
+    - [Battery](#battery)
+      - [Cells](#cells)
+        - [Notes about cells when they arrive](#notes-about-cells-when-they-arrive)
+      - [BMS](#bms)
+          - [Choosing correct amperage](#choosing-correct-amperage)
+          - [Hooking to the battery](#hooking-to-the-battery)
+      - [Case](#case)
+    - [Inverter](#inverter)
+          - [Connecting the inverter to the battery](#connecting-the-inverter-to-the-battery)
+    - [Charger](#charger)
+    - [Circuit breaker/inline fuse](#circuit-breakerinline-fuse)
+  - [Assembly ](#assembly-)
+    - [Battery unit](#battery-unit)
+    - [The case (putting everything together)](#the-case-putting-everything-together)
+  - [:tada: And now just use it! ](#tada-and-now-just-use-it-)
+
 
 ## Mate, why don't you buy a pre-made power station? :thinking: <a name="preface"></a>
 Glad you asked! Simple answer: *they're too expensive for what they're worth*. Even if you have warranty, the price per Wh (watt-hour) is ludicrous when compared to DIY solutions.
