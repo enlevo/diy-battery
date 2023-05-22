@@ -1,4 +1,4 @@
-# DIY Power Station
+# DIY Power Station 🔋
 
 If you're interested, like us, in doing things outdoors with your friends and enjoy life, you might be interested in getting yourself your own DIY battery. This is **awesome** for outdoor events and camping. It can last you *weeks* (depending on what you use). 
 
